@@ -1,0 +1,9 @@
+.env
+node_modules
+   .gitignore
+        package-lock.json
+        package.json
+        passport-config.js
+        public/
+        server.js
+        views/
