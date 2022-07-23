@@ -9,6 +9,7 @@ const passport = require('passport');
 const flash = require('express-flash');
 const session = require('express-session');
 const methodOverride = require('method-override');
+const PORT = process.env.PORT || 3000;
 
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
@@ -99,4 +100,4 @@ function chechNOtauthenticated(req, res, next) {
 	next();
 }
 
-app.listen(3000, console.log(3000));
+app.listen(PORT, console.log(PORT));
